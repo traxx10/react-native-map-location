@@ -1,0 +1,44 @@
+{
+  "name": "react-native-map-location",
+  "version": "1.0.0",
+  "description": "A react native component that returns a map view and location details of the user",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "maps",
+    "locations",
+    "ip",
+    "address"
+  ],
+  "author": "Chuks Ben <codetraxx10@gmail.com> (http://example.com)",
+  "license": "ISC",
+  "peerDependencies": {
+    "react": "16.6.3",
+    "react-native": "0.58.4"
+  },
+  "dependencies": {
+    "prop-types": "^15.5.10",
+    "axios": "^0.18.0",
+    "react-native-geolocation-service": "^2.0.0",
+    "react-native-maps": "^0.23.0",
+    "react-native-permissions": "^1.1.1",
+    "react-redux": "^6.0.0",
+    "redux": "^4.0.1",
+    "redux-logger": "^3.0.6",
+    "redux-persist": "^5.10.0",
+    "redux-persist-filesystem-storage": "^1.3.2",
+    "redux-thunk": "^2.3.0"
+  },
+  "devDependencies": {
+    "babel-core": "^7.0.0-bridge.0",
+    "babel-jest": "24.1.0",
+    "jest": "24.1.0",
+    "metro-react-native-babel-preset": "0.51.1",
+    "react-test-renderer": "16.6.3"
+  },
+  "jest": {
+    "preset": "react-native"
+  }
+}
