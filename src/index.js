@@ -8,7 +8,7 @@ class RootMap extends Component {
     render() {
         return (
             <Provider store={store}>
-                <Location />
+                <Location map={this.props.map}/>
             </Provider>
         )
     }

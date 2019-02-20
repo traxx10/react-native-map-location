@@ -61,33 +61,35 @@ class Location extends Component {
   }
 
   renderComponent = () => {
-    const { loading, coords } = this.props;
-    if(loading) {
-      return <Spinner />
-    } else {
-      return (
-          <MapView
-            provider={PROVIDER_GOOGLE} // remove if not using Google Maps
-            style={styles.map}
-            region={{
-                latitude: coords.latitude,
-                longitude: coords.longitude,
-                latitudeDelta: 0.0922,
-                longitudeDelta: 0.0421,
-            }}
-            // onRegionChange={(region) => this.onRegionChange(region)}
-            >
-                <Marker
-                    coordinate={{
-                      latitude: coords.latitude,
-                      longitude: coords.longitude,
-                    }}
-                    title=" My current location"
-                    description="" >
-                </Marker>
-        </MapView>
-      )
-    }
+    const { loading, coords, map } = this.props;
+    if(map) {
+      if(loading) {
+        return <Spinner />
+      } else {
+        return (
+            <MapView
+              provider={PROVIDER_GOOGLE} // remove if not using Google Maps
+              style={styles.map}
+              region={{
+                  latitude: coords.latitude,
+                  longitude: coords.longitude,
+                  latitudeDelta: 0.0922,
+                  longitudeDelta: 0.0421,
+              }}
+              // onRegionChange={(region) => this.onRegionChange(region)}
+              >
+                  <Marker
+                      coordinate={{
+                        latitude: coords.latitude,
+                        longitude: coords.longitude,
+                      }}
+                      title=" My current location"
+                      description="" >
+                  </Marker>
+          </MapView>
+        )
+      }
+    } else return null
   }
 
   render() {
