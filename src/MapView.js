@@ -13,14 +13,6 @@ class Map extends Component {
     }
 
     componentDidMount() {
-        // const { coords } = this.props;
-        // coords ? 
-        //     this.setState({ region: 
-        //         {   ...this.state.region, 
-        //             longitude: coords.longitude, 
-        //             latitude: coords.latitude 
-        //         }}) 
-        //     : null
     }
 
     onRegionChange = (region) => {
