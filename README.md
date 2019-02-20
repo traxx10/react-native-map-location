@@ -33,6 +33,9 @@ This library uses
     export default Example;
 ```
 
+## Props
+    **map** if true returns a map view, if false returns null
+
 ## getLocationDetails
 This is a HOC component that returns the location details of the user;
 The component returns an object;

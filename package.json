@@ -1,6 +1,6 @@
 {
   "name": "react-native-map-location",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A react native component that returns a map view and location details of the user",
   "main": "src/index.js",
   "scripts": {
@@ -18,6 +18,14 @@
     "react": "16.6.3",
     "react-native": "0.58.4"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/traxx10/react-native-map-location.git"
+  },
+  "bugs": {
+    "url": "https://https://github.com/traxx10/react-native-map-location/issues"
+  },
+  "homepage": "https://https://github.com/traxx10/react-native-map-location#readme",
   "dependencies": {
     "prop-types": "^15.5.10",
     "axios": "^0.18.0",
